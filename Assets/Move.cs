@@ -1,20 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Move : MonoBehaviour
-{
-		private LolScript l;
-		public float speed;
+public class Move : MonoBehaviour {
 
-		// Use this for initialization
-		void Start ()
-		{
-				l = GetComponent<LolScript> ();
-		}
+	public float speed;
+		
+	// Use this for initialization
+	void Start () {
+				
+	}
 	
-		// Update is called once per frame
-		void Update ()
-		{
-				rigidbody.AddForce (1f, 0, 0);
+	// Update is called once per frame
+	void Update () { 
+		if (Input.GetKey (KeyCode.W)) {
+			//rigidbody.AddRelativeForce (Vector3.forward * Time.deltaTime * speed);
+			transform.Translate (Vector3.forward * Time.deltaTime * speed);
 		}
+
+		float dir = Input.GetAxis ("Mouse X");
+		transform.Rotate (0f, dir * 5f, 0f);
+
+		if (Input.GetKeyDown (KeyCode.Space)) {
+			Debug.Log ("up!");
+			rigidbody.AddForce (Vector3.up * 5f);
+		}
+
+	}
 }
