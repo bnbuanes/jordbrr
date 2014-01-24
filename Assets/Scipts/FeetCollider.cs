@@ -10,12 +10,10 @@ public class FeetCollider : MonoBehaviour {
 	}
 
 	void OnCollisionEnter (Collision c) {
-		Debug.Log ("collided");
 		grounded = true;
 	}
 
 	void OnCollisionExit (Collision c) {
-		Debug.Log ("uncollided");
 		grounded = false;
 	}
 	
