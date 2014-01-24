@@ -21,8 +21,7 @@ public class Move : MonoBehaviour {
 		transform.Rotate (0f, dir * 5f, 0f);
 
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			Debug.Log ("up!");
-			rigidbody.AddForce (Vector3.up * 5f);
+			rigidbody.AddForce (Vector3.up * 300f);
 		}
 
 	}
