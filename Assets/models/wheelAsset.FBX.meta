@@ -1,25 +1,13 @@
 fileFormatVersion: 2
-guid: 07e86b107367fef4c9f58843dbca42c2
+guid: 47960695d8e7edd418cdc9f8a937b824
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: CMan0002-M3-Body
-    100002: CMan0002-M3-Hair
-    100004: Cylinder001
-    100006: //RootNode
-    400000: CMan0002-M3-Body
-    400002: CMan0002-M3-Hair
-    400004: Cylinder001
-    400006: //RootNode
-    2300000: CMan0002-M3-Body
-    2300002: CMan0002-M3-Hair
-    2300004: Cylinder001
-    3300000: CMan0002-M3-Body
-    3300002: CMan0002-M3-Hair
-    3300004: Cylinder001
-    4300000: CMan0002-M3-Hair
-    4300002: CMan0002-M3-Body
-    4300004: Cylinder001
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Cylinder001
     9500000: //RootNode
   materials:
     importMaterials: 1
