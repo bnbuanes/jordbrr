@@ -11,6 +11,8 @@ public class CutscenePlayer : MonoBehaviour {
 	private float speed = 3f;
 	private bool finished = false;
 
+	protected float rotationSpeed = 0.3f;
+
 	/// <summary>
 	/// The object used as a basis axis for the Cutscene Player's rotation
 	/// </summary>
@@ -36,10 +38,16 @@ public class CutscenePlayer : MonoBehaviour {
 			if (nextWaypointIndex >= waypoints.Length) {
 				finished = true;
 			} else {
+				// Move towards target position
 				Vector3 targetVector = waypoints [nextWaypointIndex].transform.position;
 				Vector3 targetAdjHeight = new Vector3 (targetVector.x, transform.position.y, targetVector.z);
 				transform.position = Vector3.MoveTowards (transform.position, targetAdjHeight, speed * Time.deltaTime);
 			
+
+				Vector3 targetLookDirection = waypoints [nextWaypointIndex].transform.forward;
+				Vector3 rotation = Vector3.RotateTowards (transform.forward, targetLookDirection, 0.3f * Time.deltaTime, 0.3f * Time.deltaTime);
+				transform.forward = rotation;
+
 				if (transform.position.x == waypoints [nextWaypointIndex].transform.position.x && transform.position.z == waypoints [nextWaypointIndex].transform.position.z) {
 					GiveControllTo (nextWaypointIndex);
 					nextWaypointIndex++;
