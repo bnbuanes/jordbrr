@@ -4,10 +4,15 @@ using System.Collections;
 public class Move : MonoBehaviour {
 
 	public float speed;
+	/// <summary>
+	/// Collider on the feet of the player, to check if the player is standing
+	/// </summary>
+	public FeetCollider fc;
+
+	private Platform standingOn;
 		
 	// Use this for initialization
 	void Start () {
-				
 	}
 	
 	// Update is called once per frame
@@ -21,7 +26,8 @@ public class Move : MonoBehaviour {
 		transform.Rotate (0f, dir * 5f, 0f);
 
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			rigidbody.AddForce (Vector3.up * 300f);
+			if (fc.isOnGround ())
+				rigidbody.AddForce (Vector3.up * 300f);
 		}
 
 	}
