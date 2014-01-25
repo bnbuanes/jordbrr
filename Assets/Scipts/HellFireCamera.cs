@@ -2,46 +2,54 @@ using UnityEngine;
 using System.Collections;
 
 public class HellFireCamera : MonoBehaviour {	
-	private GameObject startCamera;
-	private GameObject endCamera;
-	float distance;
-	private GameObject player;
+	public Camera mainCamera;
+
+	public GameObject player;
+	public GameObject EndSpawn;
+	private Vector3 endSpawnVector;
+	private bool hasMoved;
+	private bool hasCameraRotated;
 
 	// Use this for initialization
 	void Start ()
 	{
-		player = GameObject.Find ("Player");
-		startCamera = GameObject.Find ("Start camera");
-		endCamera = GameObject.Find ("End camera");
-		//endCamera.enabled = false;
+		//mainCamera = Camera.main;
+		hasMoved = false;
+		hasCameraRotated = false;
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		distance = Vector3.Distance (player.transform.position, endCamera.transform.position);
-		if (distance < 20f) {
-			lowerCamera (distance);
-		} else { 
+		float distance = Vector3.Distance (player.transform.position, mainCamera.transform.position);
+
+		if (distance < 20 && hasMoved.Equals (false)) {
 			raiseCamera (distance);
+		} else { 
+			lowerCamera (distance);
+			hasMoved = true;
+			//transform.position = new Vector3 (EndSpawn.transform.position.x, 5f, EndSpawn.transform.position.z);
 		}
 	}
 		
 	void raiseCamera (float distance)
 	{
-		//startCamera.enabled = false;
-		//endCamera.enabled = true;
-
 		float y = 1f + 0.3f * distance;
+		Debug.Log ("y raising:" + y);
 		transform.position = new Vector3 (transform.position.x, y, transform.position.y);
-
+		Debug.Log ("distance is " + distance);
 	}
-	void lowerCamera (float distance)
-	{
 
-		float y = 1f + 0.3f * distance;
-		transform.position = new Vector3 (transform.position.x, y, transform.position.z);
+	void lowerCamera (float distance)
+	{	
+		endSpawnVector = EndSpawn.transform.position;
+		float y = 1f + (distance - 1.3f) / distance;
+		Debug.Log ("y lowering" + y);
+
+		transform.position = new Vector3 (EndSpawn.transform.position.x, y, EndSpawn.transform.position.z);
+		if (hasCameraRotated.Equals (false)) {
+			transform.RotateAround (transform.position, transform.up, 180f);
+			hasCameraRotated = true;
+		}
 	}
 }
-			
-
