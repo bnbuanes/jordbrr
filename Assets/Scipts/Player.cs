@@ -23,7 +23,7 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () { 
 		if (isJumping) {
-			if (fc.IsOnGround ()) {
+			if (fc.JumpOver ()) {
 				isJumping = false;
 			}
 		} else {
@@ -41,9 +41,10 @@ public class Player : MonoBehaviour {
 
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			if (fc.IsOnGround ()) {
+				fc.StartJumping ();
 				isJumping = true;
 				anim.SetState (2);
-				rigidbody.AddForce (Vector3.up * 300f);
+				rigidbody.AddForce ((Vector3.up + transform.forward) * 300f);
 			}
 		}
 
