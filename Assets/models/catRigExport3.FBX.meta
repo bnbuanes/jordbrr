@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/models/catRigExport3.FBX.meta
 guid: 47a102f1bd79b439bb94141a7689b24e
+=======
+guid: 3aaf889b6f885472eb61dcef49ae9e7e
+>>>>>>> db0b54087de3ab5f350c6cb44a4000e68c6030e4:Assets/models/catRigExport3.FBX.meta
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
