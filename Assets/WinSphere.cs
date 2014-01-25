@@ -11,6 +11,8 @@ public class WinSphere : MonoBehaviour {
 	private bool hasWon = false;
 	private float winTime;
 
+	public GameObject ignoreObject;
+
 	void Update () {
 		if (hasWon) {
 			if (Time.time - winTime > 5f) {
@@ -21,8 +23,10 @@ public class WinSphere : MonoBehaviour {
 
 
 	void OnTriggerEnter (Collider c) {
-		winText.enabled = true;
-		hasWon = true;
-		winTime = Time.time;
+		if (c.gameObject != ignoreObject) {
+			winText.enabled = true;
+			hasWon = true;
+			winTime = Time.time;
+		}
 	}
 }

@@ -1,8 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scipts/HoverScript.js">
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scipts\CSWayPointTextAndSound.cs">
+>>>>>>> 69a630b7dfd0c4bf0684e8fe96928e844f0fb83b
     <Files>
-      <File FileName="Assets/Scipts/HoverScript.js" Line="22" Column="38" />
+      <File FileName="Assets\Scipts\CSWayPointTextAndSound.cs" Line="19" Column="25" />
+      <File FileName="Assets\Scipts\CSWaypoint.cs" Line="20" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
