@@ -5584,7 +5584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winText: {fileID: 0}
-  nextLevel: test
+  nextLevel: moving_platforms
   ignoreObject: {fileID: 0}
 --- !u!135 &1776606653
 SphereCollider:

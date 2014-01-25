@@ -3,13 +3,10 @@ using System.Collections;
 
 public class SpinScript : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
+	public float speed;
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate (0f, 1f, 0f);
+		transform.Rotate (0f, speed, 0f);
 	}
 }
