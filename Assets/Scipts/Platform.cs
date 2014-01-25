@@ -65,8 +65,6 @@ public class Platform : MonoBehaviour {
 	/// </summary>
 	/// <param name="goal">The target the platform should move towards</param>
 	void MoveTowards (Vector3 goal) {
-
-
 		transform.position = Vector3.MoveTowards (transform.position, goal, speed * Time.deltaTime);
 		foreach (Transform t in standers) {
 			Vector3 standerGoal = new Vector3 (goal.x, t.position.y, goal.z);
