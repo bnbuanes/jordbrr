@@ -31,13 +31,14 @@ public class HellFireCamera : MonoBehaviour {
 	{
 		//startCamera.enabled = false;
 		//endCamera.enabled = true;
+
 		float y = 1f + 0.3f * distance;
 		transform.position = new Vector3 (transform.position.x, y, transform.position.y);
 
 	}
 	void lowerCamera (float distance)
 	{
-				
+
 		float y = 1f + 0.3f * distance;
 		transform.position = new Vector3 (transform.position.x, y, transform.position.z);
 	}
