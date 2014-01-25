@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 43f4edd8373394383bdbd9a90254e7f0
+=======
 guid: 32bd9a486ed12ee4699c8714e15f1df3
+>>>>>>> ee6240dd889e963711e75a6ead55d38df554601c
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -116,11 +120,16 @@ ModelImporter:
     400108: //RootNode
     400110: CMan0002-M3-Body
     4300000: CMan0002-M3-Body
+<<<<<<< HEAD
+    7400000: Take 001
+    9500000: //RootNode
+=======
     7400000: Jump
     7400002: Run
     7400004: Idle
     9500000: //RootNode
     11100000: //RootNode
+>>>>>>> ee6240dd889e963711e75a6ead55d38df554601c
     13700000: CMan0002-M3-Body
   materials:
     importMaterials: 1
@@ -136,6 +145,9 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+<<<<<<< HEAD
+    clipAnimations: []
+=======
     clipAnimations:
     - serializedVersion: 16
       name: Run
@@ -731,6 +743,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+>>>>>>> ee6240dd889e963711e75a6ead55d38df554601c
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -766,6 +779,10 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+<<<<<<< HEAD
+  animationType: 2
+=======
   animationType: 1
+>>>>>>> ee6240dd889e963711e75a6ead55d38df554601c
   additionalBone: 0
   userData: 
