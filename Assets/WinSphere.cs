@@ -15,16 +15,18 @@ public class WinSphere : MonoBehaviour {
 
 	void Update () {
 		if (hasWon) {
-			if (Time.time - winTime > 5f) {
-				Application.LoadLevel (nextLevel);
-			}
+			//if (Time.time - winTime > 5f) {
+			Application.LoadLevel (nextLevel);
+			//}
 		}
 	}
 
 
 	void OnTriggerEnter (Collider c) {
 		if (c.gameObject != ignoreObject) {
-			winText.enabled = true;
+			if (winText != null) {
+				winText.enabled = true;
+			}
 			hasWon = true;
 			winTime = Time.time;
 		}

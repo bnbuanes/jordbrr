@@ -1,30 +1,13 @@
 ﻿<Properties>
-<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scipts\CutscenePlayer.cs">
-=======
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scipts\HellFireCamera.cs">
-    <Files>
-      <File FileName="Assets\Scipts\HellFireCamera.cs" Line="20" Column="1" />
-      <File FileName="Assets\Scipts\Boost.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scipts\Teleport.cs" Line="1" Column="1" />
-=======
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scipts/HoverScript.js">
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scipts\CSWayPointTextAndSound.cs">
->>>>>>> 69a630b7dfd0c4bf0684e8fe96928e844f0fb83b
->>>>>>> f8fd53ede2f1e05db1349b05c02534262a7f117d
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SpinScript.cs">
     <Files>
       <File FileName="Assets\Scipts\CSWaypoint.cs" Line="20" Column="26" />
-<<<<<<< HEAD
-      <File FileName="Assets\Scipts\CutscenePlayer.cs" Line="29" Column="2" />
-      <File FileName="Assets\StartGameOnCollision.cs" Line="23" Column="27" />
-=======
->>>>>>> 2af3b9487f419f805e1b3f27634f5a64fb21eefb
->>>>>>> f8fd53ede2f1e05db1349b05c02534262a7f117d
+      <File FileName="Assets\Scipts\CutscenePlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets\StartGameOnCollision.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scipts\PlayerAnimation.cs" Line="1" Column="1" />
+      <File FileName="Assets\WinSphere.cs" Line="17" Column="16" />
+      <File FileName="Assets\SpinScript.cs" Line="13" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
