@@ -7,17 +7,18 @@ public class FeetCollider : MonoBehaviour {
 
 	public bool isOnGround () {
 		return grounded;
+
 	}
 
-	void OnCollisionEnter (Collision c) {
+	void OnTriggerEnter (Collider c) {
 		grounded = true;
 	}
 
-	void OnCollisionExit (Collision c) {
+	void OnTriggerExit (Collider c) {
 		grounded = false;
 	}
 	
-	void OnCollisionStay (Collision c) {
+	void OnTriggerStay (Collider c) {
 		grounded = true;
 	}
 }

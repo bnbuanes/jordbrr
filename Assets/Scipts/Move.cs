@@ -7,11 +7,12 @@ public class Move : MonoBehaviour {
 	/// <summary>
 	/// Collider on the feet of the player, to check if the player is standing
 	/// </summary>
-	private FeetCollider fc;
+	public FeetCollider fc;
+
+	private Platform standingOn;
 		
 	// Use this for initialization
 	void Start () {
-		fc = GetComponent<FeetCollider> ();
 	}
 	
 	// Update is called once per frame

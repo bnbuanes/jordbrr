@@ -1,8 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scipts\Move.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scipts\Platform.cs">
     <Files>
-      <File FileName="Assets\Scipts\Move.cs" Line="10" Column="4" />
+      <File FileName="Assets\Scipts\Move.cs" Line="33" Column="3" />
+      <File FileName="Assets\Scipts\FeetCollider.cs" Line="10" Column="3" />
+      <File FileName="Assets\Scipts\Teleport.cs" Line="12" Column="48" />
+      <File FileName="Assets\Scipts\Platform.cs" Line="63" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
