@@ -1,17 +1,20 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 42989554e3c8540d0a3bbcd19422252b
-=======
-guid: 8549bdd9424be47e69aa7eb2952763b8
->>>>>>> 19d1defc0e006f1dd7ee35e2777914365e66a910
+guid: 466c30585234a4ad4b3d9755fc2b6665
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: CMan0002-M3-Body
+    100000: head
+    100002: //RootNode
+    100004: headhair
+    400000: head
+    400002: //RootNode
+    400004: headhair
+    2300000: head
+    2300002: headhair
+    3300000: head
+    3300002: headhair
+    4300000: headhair
+    4300002: head
     9500000: //RootNode
   materials:
     importMaterials: 1
