@@ -4200,7 +4200,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1063638168}
-  - 114: {fileID: 1063638167}
   - 82: {fileID: 1063638166}
   m_Layer: 0
   m_Name: Music
@@ -4217,7 +4216,7 @@ AudioSource:
   m_GameObject: {fileID: 1063638165}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: c2b2c10e141aa4618afa65a7171a7e2c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 24648aba6825e974289da6a241cc4b85, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -4267,17 +4266,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &1063638167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1063638165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cabd142d7cbe42f459ea837d405bebda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1063638168
 Transform:
   m_ObjectHideFlags: 0
