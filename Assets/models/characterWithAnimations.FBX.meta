@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 43f4edd8373394383bdbd9a90254e7f0
+=======
+guid: 32bd9a486ed12ee4699c8714e15f1df3
+>>>>>>> ee6240dd889e963711e75a6ead55d38df554601c
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -116,8 +120,16 @@ ModelImporter:
     400108: //RootNode
     400110: CMan0002-M3-Body
     4300000: CMan0002-M3-Body
+<<<<<<< HEAD
     7400000: Take 001
     9500000: //RootNode
+=======
+    7400000: Jump
+    7400002: Run
+    7400004: Idle
+    9500000: //RootNode
+    11100000: //RootNode
+>>>>>>> ee6240dd889e963711e75a6ead55d38df554601c
     13700000: CMan0002-M3-Body
   materials:
     importMaterials: 1
@@ -133,7 +145,605 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+<<<<<<< HEAD
     clipAnimations: []
+=======
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bip01
+        weight: 1
+      - path: Bip01 LPlatform
+        weight: 1
+      - path: Bip01 PelvisBone01
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 L Thigh
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 L Thigh/Bip01 L Calf
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 L Thigh/Bip01 L Calf/Bip01 L Foot
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 L Thigh/Bip01 L Calf/Bip01 L Foot/Bip01
+          L Toe0
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 R Thigh
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 R Thigh/Bip01 R Calf
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 R Thigh/Bip01 R Calf/Bip01 R Foot
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 R Thigh/Bip01 R Calf/Bip01 R Foot/Bip01
+          R Toe0
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit10
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit10/Bip01
+          LDigit12
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit10/Bip01
+          LDigit12/Bip01 LDigit13
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit21
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit21/Bip01
+          LDigit22
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit21/Bip01
+          LDigit22/Bip01 LDigit23
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit31
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit31/Bip01
+          LDigit32
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit31/Bip01
+          LDigit32/Bip01 LDigit33
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit41
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit41/Bip01
+          LDigit42
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit41/Bip01
+          LDigit42/Bip01 LDigit43
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit51
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit51/Bip01
+          LDigit52
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit51/Bip01
+          LDigit52/Bip01 LDigit53
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit10
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit10/Bip01
+          RDigit12
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit10/Bip01
+          RDigit12/Bip01 RDigit13
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit21
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit21/Bip01
+          RDigit22
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit21/Bip01
+          RDigit22/Bip01 RDigit23
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit31
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit31/Bip01
+          RDigit32
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit31/Bip01
+          RDigit32/Bip01 RDigit33
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit41
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit41/Bip01
+          RDigit42
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit41/Bip01
+          RDigit42/Bip01 RDigit43
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit51
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit51/Bip01
+          RDigit52
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit51/Bip01
+          RDigit52/Bip01 RDigit53
+        weight: 1
+      - path: Bip01 RPlatform
+        weight: 1
+      - path: CMan0002-M3-Body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 101
+      lastFrame: 160
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bip01
+        weight: 1
+      - path: Bip01 LPlatform
+        weight: 1
+      - path: Bip01 PelvisBone01
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 L Thigh
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 L Thigh/Bip01 L Calf
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 L Thigh/Bip01 L Calf/Bip01 L Foot
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 L Thigh/Bip01 L Calf/Bip01 L Foot/Bip01
+          L Toe0
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 R Thigh
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 R Thigh/Bip01 R Calf
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 R Thigh/Bip01 R Calf/Bip01 R Foot
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 R Thigh/Bip01 R Calf/Bip01 R Foot/Bip01
+          R Toe0
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit10
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit10/Bip01
+          LDigit12
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit10/Bip01
+          LDigit12/Bip01 LDigit13
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit21
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit21/Bip01
+          LDigit22
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit21/Bip01
+          LDigit22/Bip01 LDigit23
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit31
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit31/Bip01
+          LDigit32
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit31/Bip01
+          LDigit32/Bip01 LDigit33
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit41
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit41/Bip01
+          LDigit42
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit41/Bip01
+          LDigit42/Bip01 LDigit43
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit51
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit51/Bip01
+          LDigit52
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit51/Bip01
+          LDigit52/Bip01 LDigit53
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit10
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit10/Bip01
+          RDigit12
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit10/Bip01
+          RDigit12/Bip01 RDigit13
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit21
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit21/Bip01
+          RDigit22
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit21/Bip01
+          RDigit22/Bip01 RDigit23
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit31
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit31/Bip01
+          RDigit32
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit31/Bip01
+          RDigit32/Bip01 RDigit33
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit41
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit41/Bip01
+          RDigit42
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit41/Bip01
+          RDigit42/Bip01 RDigit43
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit51
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit51/Bip01
+          RDigit52
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit51/Bip01
+          RDigit52/Bip01 RDigit53
+        weight: 1
+      - path: Bip01 RPlatform
+        weight: 1
+      - path: CMan0002-M3-Body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Jump
+      takeName: Take 001
+      firstFrame: 161
+      lastFrame: 180
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bip01
+        weight: 1
+      - path: Bip01 LPlatform
+        weight: 1
+      - path: Bip01 PelvisBone01
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 L Thigh
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 L Thigh/Bip01 L Calf
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 L Thigh/Bip01 L Calf/Bip01 L Foot
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 L Thigh/Bip01 L Calf/Bip01 L Foot/Bip01
+          L Toe0
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 R Thigh
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 R Thigh/Bip01 R Calf
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 R Thigh/Bip01 R Calf/Bip01 R Foot
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Pelvis/Bip01 R Thigh/Bip01 R Calf/Bip01 R Foot/Bip01
+          R Toe0
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit10
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit10/Bip01
+          LDigit12
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit10/Bip01
+          LDigit12/Bip01 LDigit13
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit21
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit21/Bip01
+          LDigit22
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit21/Bip01
+          LDigit22/Bip01 LDigit23
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit31
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit31/Bip01
+          LDigit32
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit31/Bip01
+          LDigit32/Bip01 LDigit33
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit41
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit41/Bip01
+          LDigit42
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit41/Bip01
+          LDigit42/Bip01 LDigit43
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit51
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit51/Bip01
+          LDigit52
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 L
+          Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 LDigit51/Bip01
+          LDigit52/Bip01 LDigit53
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit10
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit10/Bip01
+          RDigit12
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit10/Bip01
+          RDigit12/Bip01 RDigit13
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit21
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit21/Bip01
+          RDigit22
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit21/Bip01
+          RDigit22/Bip01 RDigit23
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit31
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit31/Bip01
+          RDigit32
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit31/Bip01
+          RDigit32/Bip01 RDigit33
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit41
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit41/Bip01
+          RDigit42
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit41/Bip01
+          RDigit42/Bip01 RDigit43
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit51
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit51/Bip01
+          RDigit52
+        weight: 1
+      - path: Bip01 PelvisBone01/Bip01 Spine1/Bip01 Spine1 1/Bip01 Spine3/Bip01 R
+          Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 RDigit51/Bip01
+          RDigit52/Bip01 RDigit53
+        weight: 1
+      - path: Bip01 RPlatform
+        weight: 1
+      - path: CMan0002-M3-Body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+>>>>>>> ee6240dd889e963711e75a6ead55d38df554601c
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -169,6 +779,10 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+<<<<<<< HEAD
   animationType: 2
+=======
+  animationType: 1
+>>>>>>> ee6240dd889e963711e75a6ead55d38df554601c
   additionalBone: 0
   userData: 
