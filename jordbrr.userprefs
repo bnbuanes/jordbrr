@@ -1,7 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\StartGameOnCollision.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scipts/HoverScript.js">
     <Files>
+<<<<<<< HEAD
       <File FileName="Assets\Scipts\CSWayPointText.cs" Line="20" Column="26" />
       <File FileName="Assets\Scipts\Player.cs" Line="1" Column="1" />
       <File FileName="Assets\Scipts\FeetCollider.cs" Line="1" Column="1" />
@@ -14,6 +15,9 @@
       <File FileName="Assets\StartGameOnCollision.cs" Line="20" Column="1" />
       <File FileName="Assets\WinSphere.cs" Line="26" Column="38" />
       <File FileName="Assets\Scipts\LevelChange.cs" Line="38" Column="4" />
+=======
+      <File FileName="Assets/Scipts/HoverScript.js" Line="22" Column="38" />
+>>>>>>> a7094c50ea73e5644a3b37941d8ee0ba503d784f
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
