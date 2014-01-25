@@ -1,6 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PlayerAnimation.cs">
+=======
+<<<<<<< HEAD
+  <MonoDevelop.Ide.Workbench />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scipts\Platform.cs">
+>>>>>>> 50e33504f0e10e9c2514efa38caa8583ee83886a
     <Files>
       <File FileName="Assets\Scipts\Move.cs" Line="15" Column="17" />
       <File FileName="Assets\Scipts\FeetCollider.cs" Line="1" Column="1" />
@@ -13,6 +20,7 @@
       <File FileName="Assets\PlayerAnimation.cs" Line="22" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+>>>>>>> 33a17f318724b3e9661600d4784f22db8e189646
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

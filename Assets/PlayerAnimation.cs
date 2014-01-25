@@ -46,10 +46,18 @@ public class PlayerAnimation : MonoBehaviour {
 		this.state = state;
 	}
 
-	void RunStateUpdate () {
+	void ChangeState (string state) {
 		if (stateChanged) {
-			anim.Play ("Run");
+			anim.Play (state);
 		}
+	}
+
+	void IdleStateUpdate () {
+
+	}
+
+	void RunStateUpdate () {
+		ChangeState ("Run");
 
 		float animTime = anim ["Run"].time;
 		if (animTime - timeOfLast > 0.33f) {
@@ -57,5 +65,9 @@ public class PlayerAnimation : MonoBehaviour {
 			Debug.Log ("time");
 			timeOfLast = animTime;
 		}
+	}
+
+	void JumpStateUpdate () {
+
 	}
 }
