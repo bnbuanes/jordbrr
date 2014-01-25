@@ -5,7 +5,7 @@ public class FeetCollider : MonoBehaviour {
 
 	private bool grounded = true;
 
-	public bool isOnGround () {
+	public bool IsOnGround () {
 		return grounded;
 
 	}
