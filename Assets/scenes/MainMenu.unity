@@ -1273,7 +1273,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e4df9498f574038b1794403b5d1c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Test Scene
+  levelToLoad: test
+  anim: {fileID: 1637908917}
+  sound: {fileID: 8300000, guid: 7a4b8eb6a635a48278fd100d168ced22, type: 3}
   soundhover: {fileID: 8300000, guid: e310623c1c5ff45bfbe4a020a4609697, type: 3}
   beep: {fileID: 8300000, guid: f0cda366988ab4bef891e8b709a7c370, type: 3}
   QuitButton: 0
@@ -8764,7 +8766,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1637908916}
-  - 95: {fileID: 1637908917}
+  - 111: {fileID: 1637908917}
   m_Layer: 0
   m_Name: guillotineWithAnimation
   m_TagString: Untagged
@@ -8785,21 +8787,21 @@ Transform:
   - {fileID: 2143758635}
   - {fileID: 677674909}
   m_Father: {fileID: 0}
---- !u!95 &1637908917
-Animator:
-  serializedVersion: 2
+--- !u!111 &1637908917
+Animation:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9500000, guid: 47b64f57cc7eb45ee904c5718eebf3ed,
-    type: 3}
-  m_PrefabInternal: {fileID: 1685062438}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1637908915}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 47b64f57cc7eb45ee904c5718eebf3ed, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_ApplyRootMotion: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 47b64f57cc7eb45ee904c5718eebf3ed, type: 3}
+  m_Animations:
+  - {fileID: 7400000, guid: 47b64f57cc7eb45ee904c5718eebf3ed, type: 3}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
-  m_HasTransformHierarchy: 1
+  m_CullingType: 0
 --- !u!1001 &1685062438
 Prefab:
   m_ObjectHideFlags: 0
@@ -8855,7 +8857,9 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e15716a526bdf5149960461d651d2bb1, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: 47b64f57cc7eb45ee904c5718eebf3ed, type: 3}
+    - {fileID: 11100000, guid: 47b64f57cc7eb45ee904c5718eebf3ed, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 47b64f57cc7eb45ee904c5718eebf3ed, type: 3}
   m_RootGameObject: {fileID: 1637908915}
   m_IsPrefabParent: 0
@@ -10089,6 +10093,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: 
+  anim: {fileID: 0}
+  sound: {fileID: 0}
   soundhover: {fileID: 8300000, guid: e310623c1c5ff45bfbe4a020a4609697, type: 3}
   beep: {fileID: 8300000, guid: f0cda366988ab4bef891e8b709a7c370, type: 3}
   QuitButton: 1
