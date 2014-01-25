@@ -1,5 +1,5 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scipts/HoverScript.js">
     <Files>
       <File FileName="Assets/Scipts/HoverScript.js" Line="22" Column="38" />
