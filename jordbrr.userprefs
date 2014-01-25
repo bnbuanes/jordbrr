@@ -1,4 +1,8 @@
 ﻿<Properties>
+<<<<<<< HEAD
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scipts\CutscenePlayer.cs">
+=======
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
 <<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scipts\HellFireCamera.cs">
@@ -12,10 +16,15 @@
 =======
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scipts\CSWayPointTextAndSound.cs">
 >>>>>>> 69a630b7dfd0c4bf0684e8fe96928e844f0fb83b
+>>>>>>> f8fd53ede2f1e05db1349b05c02534262a7f117d
     <Files>
-      <File FileName="Assets\Scipts\CSWayPointTextAndSound.cs" Line="19" Column="25" />
       <File FileName="Assets\Scipts\CSWaypoint.cs" Line="20" Column="26" />
+<<<<<<< HEAD
+      <File FileName="Assets\Scipts\CutscenePlayer.cs" Line="29" Column="2" />
+      <File FileName="Assets\StartGameOnCollision.cs" Line="23" Column="27" />
+=======
 >>>>>>> 2af3b9487f419f805e1b3f27634f5a64fb21eefb
+>>>>>>> f8fd53ede2f1e05db1349b05c02534262a7f117d
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

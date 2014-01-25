@@ -43,7 +43,6 @@ public class PlayerAnimation : MonoBehaviour {
 	public void SetState (int state)
 	{
 		if (this.state != state) {
-			Debug.Log ("Changing state to: " + state + " from state " + this.state);
 			this.state = state;
 			switch (state) {
 			case 0:

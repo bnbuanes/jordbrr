@@ -52,13 +52,10 @@ public class CutscenePlayer : MonoBehaviour {
 				Vector3 targetVector = waypoints [nextWaypointIndex].transform.position;
 				//Vector3 targetAdjHeight = new Vector3 (targetVector.x, transform.position.y, targetVector.z);
 				transform.position = Vector3.MoveTowards (transform.position, targetVector, speed * Time.deltaTime);
-			
 
 				Vector3 targetLookDirection = waypoints [nextWaypointIndex].transform.forward;
 				Vector3 rotation = Vector3.RotateTowards (transform.forward, targetLookDirection, rotationSpeed * Time.deltaTime, rotationSpeed * Time.deltaTime);
 				transform.forward = rotation;
-				Debug.Log (targetLookDirection);
-				//transform.forward = targetLookDirection;
 
 				bool equalDirection = Round (transform.forward.x) == Round (targetLookDirection.x);
 				equalDirection &= Round (transform.forward.y) == Round (targetLookDirection.y);
