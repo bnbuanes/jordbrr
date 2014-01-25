@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 07e86b107367fef4c9f58843dbca42c2
+guid: 480979d065f734aceb5d5b039d889bdd
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -21,6 +21,7 @@ ModelImporter:
     4300002: CMan0002-M3-Body
     4300004: Cylinder001
     9500000: //RootNode
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -71,6 +72,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   additionalBone: 0
   userData: 
