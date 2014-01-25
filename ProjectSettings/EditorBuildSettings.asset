@@ -63,3 +63,5 @@ EditorBuildSettings:
     path: Assets/scenes/castle-yard.unity
   - enabled: 1
     path: Assets/scenes/middelalder.unity
+  - enabled: 1
+    path: Assets/scenes/spinning.unity
