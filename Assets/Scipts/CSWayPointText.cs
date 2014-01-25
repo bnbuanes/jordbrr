@@ -2,14 +2,13 @@
 using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(GUIText))]
 public class CSWayPointText : CSWaypoint {
 
-	private GUIText text;
+	public GUIText text;
 	private bool started = false;
 
 	void Start () {
-		text = GetComponent<GUIText> ();
+
 	}
 
 	protected override void DoWaypointCutscene () {
