@@ -40,7 +40,6 @@ public class PlayerAnimation : MonoBehaviour {
 
 	public void SetState (int state) {
 		if (this.state != state) {
-			Debug.Log ("Changing state to: " + state + " from state " + this.state);
 			this.state = state;
 			switch (state) {
 			case 0:
@@ -67,7 +66,6 @@ public class PlayerAnimation : MonoBehaviour {
 		float animTime = anim ["Run"].time;
 		if (animTime - timeOfLast > 0.33f) {
 			footStep.Play ();
-			Debug.Log ("time");
 			timeOfLast = animTime;
 		}
 	}
