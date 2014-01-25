@@ -18,7 +18,6 @@ public class Teleport : MonoBehaviour {
 	}
 
 	void OnCollisionEnter (Collision c) {
-		Debug.Log ("collided with: " + c.collider.gameObject);
 		c.gameObject.transform.position = spawnLocation;
 	}
 }
