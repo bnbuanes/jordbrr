@@ -35,6 +35,10 @@ Material:
         second: 5.56603813
       data:
         first:
+          name: _SquashAmount
+        second: 1
+      data:
+        first:
           name: _Occlusion
         second: 17.5471706
     m_Colors:
