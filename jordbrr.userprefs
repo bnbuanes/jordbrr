@@ -1,23 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\RepeatTiles.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scipts\Move.cs">
     <Files>
       <File FileName="Assets\Scipts\Boost.cs" Line="19" Column="37" />
-      <File FileName="Assets\Scipts\Move.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scipts\Move.cs" Line="10" Column="24" />
       <File FileName="Assets\Scipts\Teleport.cs" Line="1" Column="1" />
       <File FileName="Assets\RepeatTiles.cs" Line="1" Column="1" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scipts\CutscenePlayer.cs">
-    <Files>
-      <File FileName="Assets\Scipts\Move.cs" Line="15" Column="17" />
-      <File FileName="Assets\Scipts\FeetCollider.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scipts\Teleport.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scipts\Platform.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scipts\CSWayPointText.cs" Line="15" Column="49" />
-      <File FileName="Assets\Scipts\CutscenePlayer.cs" Line="49" Column="23" />
-      <File FileName="Assets\CSWayPointRotate.cs" Line="18" Column="23" />
->>>>>>> 59dd77c82f9885612fd314b8ccc4c28ff20f2bdf
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
