@@ -11,6 +11,8 @@ public class CutscenePlayer : MonoBehaviour {
 	private float speed = 3f;
 	private bool finished = false;
 
+	public Animation anim;
+
 	protected float rotationSpeed = 0.3f;
 
 	/// <summary>
@@ -39,6 +41,12 @@ public class CutscenePlayer : MonoBehaviour {
 
 			if (nextWaypointIndex >= waypoints.Length) {
 				finished = true;
+				if (anim != null) {
+					anim.Play ();
+				}
+				camera.transform.parent = head;
+				head.parent = null;
+				head.rigidbody.isKinematic = false;
 			} else {
 				// Move towards target position
 				Vector3 targetVector = waypoints [nextWaypointIndex].transform.position;
@@ -55,18 +63,12 @@ public class CutscenePlayer : MonoBehaviour {
 				bool equalDirection = Round (transform.forward.x) == Round (targetLookDirection.x);
 				equalDirection &= Round (transform.forward.y) == Round (targetLookDirection.y);
 				equalDirection &= Round (transform.forward.z) == Round (targetLookDirection.z);
-				
-				Debug.Log ("equal direction: " + equalDirection);
 
 				if (transform.position.Equals (targetVector) && equalDirection) {
 					GiveControllTo (nextWaypointIndex);
 					nextWaypointIndex++;
 				}
 			}
-		} else if (finished) {
-			camera.transform.parent = head;
-			head.parent = null;
-			head.rigidbody.isKinematic = false;
 		}
 	}
 
