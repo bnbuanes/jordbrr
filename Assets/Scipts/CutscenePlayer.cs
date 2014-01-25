@@ -17,6 +17,8 @@ public class CutscenePlayer : MonoBehaviour {
 	/// The object used as a basis axis for the Cutscene Player's rotation
 	/// </summary>
 	public Transform rotateObject;
+
+	public Camera camera;
 	
 	/// <summary>
 	/// Indicates if the cutscene is in controll. If false, a waypoint should have controll.
@@ -40,23 +42,37 @@ public class CutscenePlayer : MonoBehaviour {
 			} else {
 				// Move towards target position
 				Vector3 targetVector = waypoints [nextWaypointIndex].transform.position;
-				Vector3 targetAdjHeight = new Vector3 (targetVector.x, transform.position.y, targetVector.z);
-				transform.position = Vector3.MoveTowards (transform.position, targetAdjHeight, speed * Time.deltaTime);
+				//Vector3 targetAdjHeight = new Vector3 (targetVector.x, transform.position.y, targetVector.z);
+				transform.position = Vector3.MoveTowards (transform.position, targetVector, speed * Time.deltaTime);
 			
 
 				Vector3 targetLookDirection = waypoints [nextWaypointIndex].transform.forward;
-				Vector3 rotation = Vector3.RotateTowards (transform.forward, targetLookDirection, 0.3f * Time.deltaTime, 0.3f * Time.deltaTime);
+				Vector3 rotation = Vector3.RotateTowards (transform.forward, targetLookDirection, rotationSpeed * Time.deltaTime, rotationSpeed * Time.deltaTime);
 				transform.forward = rotation;
+				Debug.Log (targetLookDirection);
+				//transform.forward = targetLookDirection;
 
-				if (transform.position.x == waypoints [nextWaypointIndex].transform.position.x && transform.position.z == waypoints [nextWaypointIndex].transform.position.z) {
+				bool equalDirection = Round (transform.forward.x) == Round (targetLookDirection.x);
+				equalDirection &= Round (transform.forward.y) == Round (targetLookDirection.y);
+				equalDirection &= Round (transform.forward.z) == Round (targetLookDirection.z);
+				
+				Debug.Log ("equal direction: " + equalDirection);
+
+				if (transform.position.Equals (targetVector) && equalDirection) {
 					GiveControllTo (nextWaypointIndex);
 					nextWaypointIndex++;
 				}
 			}
 		} else if (finished) {
+			camera.transform.parent = head;
 			head.parent = null;
 			head.rigidbody.isKinematic = false;
 		}
+	}
+
+	private float Round (float f) {
+		return f = Mathf.Round (f * 1000f) / 1000f;
+
 	}
 
 	/// <summary>
