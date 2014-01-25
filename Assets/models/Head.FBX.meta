@@ -11,10 +11,13 @@ ModelImporter:
     400004: //RootNode
     2300000: CMan0002-M3-Body
     2300002: CMan0002-M3-Hair
+    2300004: //RootNode
     3300000: CMan0002-M3-Body
     3300002: CMan0002-M3-Hair
+    3300004: //RootNode
     4300000: CMan0002-M3-Hair
     4300002: CMan0002-M3-Body
+    4300004: Head
     9500000: //RootNode
   materials:
     importMaterials: 1
