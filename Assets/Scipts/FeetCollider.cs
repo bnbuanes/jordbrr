@@ -4,13 +4,22 @@ using System.Collections;
 public class FeetCollider : MonoBehaviour {
 
 	private bool grounded = true;
+	private bool jumpStarted = false;
 
-	public bool isOnGround () {
+	public bool IsOnGround () {
 		return grounded;
+	}
 
+	public bool JumpOver () {
+		return !jumpStarted;
+	}
+
+	public void StartJumping () {
+		jumpStarted = true;
 	}
 
 	void OnTriggerEnter (Collider c) {
+		jumpStarted = false;
 		grounded = true;
 	}
 
