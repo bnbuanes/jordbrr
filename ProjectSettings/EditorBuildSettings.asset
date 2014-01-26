@@ -21,3 +21,5 @@ EditorBuildSettings:
     path: Assets/scenes/spinning.unity
   - enabled: 1
     path: Assets/scenes/water-works.unity
+  - enabled: 1
+    path: Assets/scenes/endscreen.unity
