@@ -2134,7 +2134,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 47b64f57cc7eb45ee904c5718eebf3ed, type: 3}
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!65 &449436866
@@ -3847,6 +3847,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: .5
       objectReference: {fileID: 0}
+    - target: {fileID: 11100000, guid: 47b64f57cc7eb45ee904c5718eebf3ed, type: 3}
+      propertyPath: m_PlayAutomatically
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 47b64f57cc7eb45ee904c5718eebf3ed, type: 3}
   m_RootGameObject: {fileID: 449436863}
@@ -4153,7 +4157,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400130, guid: ee9f1311cdfe77d4499d75ea4fd52c2f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 88.3231659
+      value: 83.3807678
       objectReference: {fileID: 0}
     - target: {fileID: 400130, guid: ee9f1311cdfe77d4499d75ea4fd52c2f, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4161,7 +4165,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400130, guid: ee9f1311cdfe77d4499d75ea4fd52c2f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 5.74317646
+      value: 14.4077349
       objectReference: {fileID: 0}
     - target: {fileID: 400130, guid: ee9f1311cdfe77d4499d75ea4fd52c2f, type: 2}
       propertyPath: m_LocalRotation.x
@@ -5143,7 +5147,7 @@ Transform:
   m_PrefabInternal: {fileID: 1185635788}
   m_GameObject: {fileID: 1650601977}
   m_LocalRotation: {x: 0, y: .758633673, z: 0, w: .651517451}
-  m_LocalPosition: {x: 88.3231659, y: 7.62929249, z: 5.74317646}
+  m_LocalPosition: {x: 83.3807678, y: 7.62929249, z: 14.4077349}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1307314954}
@@ -5668,7 +5672,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 635b91074a2e70e498a104bad4e23ef0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winText: {fileID: 0}
   nextLevel: moving_platforms
   player: {fileID: 1650601982}
   ignoreObject: {fileID: 0}
