@@ -13,8 +13,11 @@ function OnMouseUp(){
 		Application.Quit();
 	}
 	else{
-		anim.CrossFade("Take 001");
+		if(anim)
+			anim.CrossFade("Take 001");
 		audio.PlayOneShot(sound);
+		
+		
 		yield new WaitForSeconds(1.0);
 		Application.LoadLevel(levelToLoad);
 	}

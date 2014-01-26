@@ -15,25 +15,9 @@ Platform assembly: C:\Users\Eier\workspace\unity\jordbrr\Build\game_Data\Managed
 Loading C:\Users\Eier\workspace\unity\jordbrr\Build\game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Eier\workspace\unity\jordbrr\Build\game_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
 Loading C:\Users\Eier\workspace\unity\jordbrr\Build\game_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-- Completed reload, in  0.046 seconds
+Platform assembly: C:\Users\Eier\workspace\unity\jordbrr\Build\game_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Eier\workspace\unity\jordbrr\Build\game_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.052 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-UnloadTime: 0.313021 ms
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 116.
-Total: 0.783837 ms (FindLiveObjects: 0.008552 ms CreateObjectMapping: 0.005559 ms MarkObjects: 0.089801 ms  DeleteObjects: 0.002565 ms)
-
-UnloadTime: 0.289502 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 116.
-Total: 0.763311 ms (FindLiveObjects: 0.004276 ms CreateObjectMapping: 0.005986 ms MarkObjects: 0.092794 ms  DeleteObjects: 0.002138 ms)
-
-UnloadTime: 0.284798 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 116.
-Total: 0.770153 ms (FindLiveObjects: 0.004276 ms CreateObjectMapping: 0.005559 ms MarkObjects: 0.100064 ms  DeleteObjects: 0.002138 ms)
-
