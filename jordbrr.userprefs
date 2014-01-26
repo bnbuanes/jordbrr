@@ -1,10 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scipts\teleportInHell.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scipts/Platform.cs">
     <Files>
-      <File FileName="Assets\Scipts\teleportInHell.cs" Line="23" Column="15" />
-      <File FileName="Assets\Scipts\Teleport.cs" Line="16" Column="17" />
-      <File FileName="Assets\Scipts\HellFireCamera.cs" Line="53" Column="28" />
+      <File FileName="Assets/Scipts/Platform.cs" Line="58" Column="21" />
+      <File FileName="Assets/Scipts/HoverScript.js" Line="25" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
