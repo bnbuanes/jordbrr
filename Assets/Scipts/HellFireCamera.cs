@@ -35,16 +35,16 @@ public class HellFireCamera : MonoBehaviour {
 	void raiseCamera (float distance)
 	{
 		float y = 1f + 0.3f * distance;
-		Debug.Log ("y raising:" + y);
+
 		transform.position = new Vector3 (transform.position.x, y, transform.position.y);
-		Debug.Log ("distance is " + distance);
+
 	}
 
 	void lowerCamera (float distance)
 	{	
 		endSpawnVector = EndSpawn.transform.position;
-		float y = 1f + (distance - 1.3f) / distance;
-		Debug.Log ("y lowering" + y);
+		float y = 0.5f + (distance - 1.3f) / distance;
+
 
 		transform.position = new Vector3 (EndSpawn.transform.position.x, y, EndSpawn.transform.position.z);
 		if (hasCameraRotated.Equals (false)) {

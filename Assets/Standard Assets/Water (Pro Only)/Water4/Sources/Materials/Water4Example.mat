@@ -172,6 +172,14 @@ Material:
         second: 1.67142856
       data:
         first:
+          name: _FresnelScale
+        second: .657142818
+      data:
+        first:
+          name: _GerstnerIntensity
+        second: 1.67142856
+      data:
+        first:
           name: _WaveScale
         second: .0462896563
       data:
@@ -257,6 +265,13 @@ Material:
         second: {r: 1, g: 1, b: 0, a: 0}
       data:
         first:
+<<<<<<< HEAD
+=======
+          name: _Extinction
+        second: {r: 4.5, g: 75, b: 300, a: 1}
+      data:
+        first:
+>>>>>>> f62d9e03e48d1040ccf05a643e4489bdb06994c8
           name: _ReflectionTex_ST
         second: {r: 1, g: 1, b: 0, a: 0}
       data:

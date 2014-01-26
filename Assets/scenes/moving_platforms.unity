@@ -685,6 +685,7 @@ Transform:
   m_LocalPosition: {x: 20.8493004, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2025079538}
   - {fileID: 2114524958}
   m_Father: {fileID: 1724723374}
 --- !u!1 &241291985
@@ -1988,6 +1989,14 @@ Prefab:
     - target: {fileID: 400000, guid: bcae914220acd4907840a029bb9d9aec, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bcae914220acd4907840a029bb9d9aec, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bcae914220acd4907840a029bb9d9aec, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bcae914220acd4907840a029bb9d9aec, type: 2}
@@ -4844,7 +4853,7 @@ Transform:
   m_GameObject: {fileID: 1613381869}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .512533665, y: -.277362823, z: -.244843245}
-  m_LocalScale: {x: 16, y: 1, z: 16}
+  m_LocalScale: {x: 20, y: 1, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &1640035675
@@ -5795,7 +5804,7 @@ GameObject:
   - 135: {fileID: 2025079540}
   - 114: {fileID: 2025079539}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: HeadSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5807,11 +5816,11 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2025079537}
-  m_LocalRotation: {x: -.0360481888, y: .706187367, z: -.0360481814, w: .706187367}
-  m_LocalPosition: {x: 1.59424602e-07, y: -1.86590004, z: 2.2077291}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.09484863, y: .936184406, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
-  m_Father: {fileID: 2114524958}
+  m_Father: {fileID: 233416860}
 --- !u!114 &2025079539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5824,7 +5833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winText: {fileID: 0}
-  nextLevel: spinning
+  nextLevel: totalHell
   ignoreObject: {fileID: 0}
 --- !u!135 &2025079540
 SphereCollider:
@@ -5833,7 +5842,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2025079537}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: .5
@@ -5932,8 +5941,7 @@ Transform:
   m_LocalRotation: {x: .0360481888, y: -.706187367, z: .0360481814, w: .706187367}
   m_LocalPosition: {x: 6.10110283, y: 3.01719236, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2025079538}
+  m_Children: []
   m_Father: {fileID: 233416860}
 --- !u!1 &2126551589
 GameObject:
