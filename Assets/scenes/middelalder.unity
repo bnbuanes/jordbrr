@@ -5670,7 +5670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winText: {fileID: 0}
   nextLevel: moving_platforms
-  player: {fileID: 0}
+  player: {fileID: 1650601982}
   ignoreObject: {fileID: 0}
 --- !u!135 &1776606653
 SphereCollider:
