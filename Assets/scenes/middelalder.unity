@@ -3133,7 +3133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &699741666
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5670,6 +5670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winText: {fileID: 0}
   nextLevel: moving_platforms
+  player: {fileID: 0}
   ignoreObject: {fileID: 0}
 --- !u!135 &1776606653
 SphereCollider:
