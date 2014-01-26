@@ -49,7 +49,7 @@ public class Player : MonoBehaviour {
 				fc.StartJumping ();
 				isJumping = true;
 				anim.SetState (2);
-				rigidbody.AddForce ((Vector3.up + transform.forward) * 300f);
+				rigidbody.AddForce ((Vector3.up + transform.forward) * 100f * speed);
 			}
 		}
 	}
