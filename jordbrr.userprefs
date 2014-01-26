@@ -3,7 +3,8 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scipts\HellFireCamera.cs">
     <Files>
       <File FileName="Assets\Scipts\Teleport.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scipts\HellFireCamera.cs" Line="38" Column="3" />
+      <File FileName="Assets\Scipts\HellFireCamera.cs" Line="46" Column="22" />
+      <File FileName="c:\Users\Kristian\Unityworkspace\jordbrr\Assets\Sample Assets\Effects\Light Shafts\Scripts\LightShafts.Resources.cs" Line="103" Column="119" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
