@@ -38,6 +38,8 @@ public class Platform : MonoBehaviour {
 	/// </summary>
 	private List<Transform> standers;
 
+	public bool goBack = true;
+
 	// Use this for initialization
 	void Start () {
 		originalPos = transform.position;
@@ -53,7 +55,7 @@ public class Platform : MonoBehaviour {
 			if (transform.position.Equals (goalPos))
 				movingTowardsGoal = false;
 
-		} else {
+		} else if(goBack) {
 			MoveTowards (originalPos);
 			if (transform.position.Equals (originalPos))
 				movingTowardsGoal = true;
