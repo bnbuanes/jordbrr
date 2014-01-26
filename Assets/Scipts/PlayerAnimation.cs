@@ -6,6 +6,7 @@ public class PlayerAnimation : MonoBehaviour {
 	private Animation anim;
 	private float timeOfLast;
 	private AudioSource footStep;
+	private int lastState = 0;
 
 	/// <summary>
 	/// 0: idle, 1: running, 2: jumping
@@ -13,16 +14,14 @@ public class PlayerAnimation : MonoBehaviour {
 	private int state;
 
 	// Use this for initialization
-	void Start ()
-	{
+	void Start () {
 		anim = GetComponentInChildren<Animation> ();
 		footStep = GetComponent<AudioSource> ();
 		timeOfLast = anim ["Run"].time;
 	}
 	
 	// Update is called once per frame
-	void Update ()
-	{
+	void Update () {
 		switch (state) {
 		case 0:
 			IdleStateUpdate ();
@@ -40,15 +39,18 @@ public class PlayerAnimation : MonoBehaviour {
 
 	}
 
-	public void SetState (int state)
-	{
+	public void SetState (int state) {
 		if (this.state != state) {
+			lastState = this.state;
 			this.state = state;
 			switch (state) {
 			case 0:
+				if (lastState == 2)
+					footStep.Play ();
 				ChangeState ("Idle");
 				break;
 			case 1:
+				timeOfLast = -0.33f;
 				ChangeState ("Run");
 				break;
 			case 2:
@@ -58,25 +60,22 @@ public class PlayerAnimation : MonoBehaviour {
 		}
 	}
 
-	void ChangeState (string state)
-	{
+	void ChangeState (string state) {
 		anim.Play (state);
 	}
 
-	void IdleStateUpdate ()
-	{
+	void IdleStateUpdate () {
 	}
 
-	void RunStateUpdate ()
-	{
+	void RunStateUpdate () {
 		float animTime = anim ["Run"].time;
+		Debug.Log (animTime - timeOfLast);
 		if (animTime - timeOfLast > 0.33f) {
 			footStep.Play ();
 			timeOfLast = animTime;
 		}
 	}
 
-	void JumpStateUpdate ()
-	{
+	void JumpStateUpdate () {
 	}
 }
