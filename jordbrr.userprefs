@@ -1,11 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scipts\WinSphere.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scipts\HoverScript.js">
     <Files>
-      <File FileName="Assets\Scipts\PlayerAnimation.cs" Line="49" Column="23" />
-      <File FileName="Assets\Scipts\Player.cs" Line="38" Column="23" />
-      <File FileName="Assets\Scipts\StartGameOnCollision.cs" Line="29" Column="44" />
-      <File FileName="Assets\Scipts\WinSphere.cs" Line="28" Column="1" />
+      <File FileName="Assets\Scipts\HoverScript.js" Line="12" Column="17" />
+      <File FileName="Assets\Scipts\PlayerAnimation.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scipts\Player.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scipts\StartGameOnCollision.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scipts\WinSphere.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scipts\HoverScript.js" Line="17" Column="31" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
