@@ -13,11 +13,11 @@ public class Teleport : MonoBehaviour {
 	private Vector3 spawnLocation;
 
 	// Use this for initialization
-	void Start () {
+	public virtual void Start () {
 		spawnLocation = spawnPoint.transform.position;
 	}
 
-	void OnCollisionEnter (Collision c) {
+	public virtual void OnCollisionEnter (Collision c) {
 		if (c.gameObject.rigidbody != null) {
 			//Stop current object spinning
 			c.gameObject.rigidbody.angularVelocity = Vector3.zero;
