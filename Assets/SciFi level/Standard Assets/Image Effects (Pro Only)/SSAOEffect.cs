@@ -3,8 +3,7 @@ using UnityEngine;
 [ExecuteInEditMode]
 [RequireComponent (typeof(Camera))]
 [AddComponentMenu("Image Effects/Screen Space Ambient Occlusion")]
-public class SSAOEffect : MonoBehaviour
-{
+public class SSAOEffect : MonoBehaviour {
 	public enum SSAOSamples {
 		Low = 0,
 		Medium = 1,
@@ -26,41 +25,34 @@ public class SSAOEffect : MonoBehaviour
 	
 	private bool m_Supported;
 
-	private static Material CreateMaterial (Shader shader)
-	{
+	private static Material CreateMaterial (Shader shader) {
 		if (!shader)
 			return null;
 		Material m = new Material (shader);
 		m.hideFlags = HideFlags.HideAndDontSave;
 		return m;
 	}
-	private static void DestroyMaterial (Material mat)
-	{
-		if (mat)
-		{
+	private static void DestroyMaterial (Material mat) {
+		if (mat) {
 			DestroyImmediate (mat);
 			mat = null;
 		}
 	}
 	
 	
-	void OnDisable()
-	{
+	void OnDisable () {
 		DestroyMaterial (m_SSAOMaterial);
 	}
 	
-	void Start()
-	{
-		if (!SystemInfo.supportsImageEffects || !SystemInfo.SupportsRenderTextureFormat (RenderTextureFormat.Depth))
-		{
+	void Start () {
+		if (!SystemInfo.supportsImageEffects || !SystemInfo.SupportsRenderTextureFormat (RenderTextureFormat.Depth)) {
 			m_Supported = false;
 			enabled = false;
 			return;
 		}
 		
 		CreateMaterials ();
-		if (!m_SSAOMaterial || m_SSAOMaterial.passCount != 5)
-		{
+		if (!m_SSAOMaterial || m_SSAOMaterial.passCount != 5) {
 			m_Supported = false;
 			enabled = false;
 			return;
@@ -75,18 +67,15 @@ public class SSAOEffect : MonoBehaviour
 		camera.depthTextureMode |= DepthTextureMode.DepthNormals;
 	}
 
-	private void CreateMaterials ()
-	{
-		if (!m_SSAOMaterial && m_SSAOShader.isSupported)
-		{
+	private void CreateMaterials () {
+		if (!m_SSAOMaterial && m_SSAOShader.isSupported) {
 			m_SSAOMaterial = CreateMaterial (m_SSAOShader);
 			m_SSAOMaterial.SetTexture ("_RandomTexture", m_RandomTexture);
 		}
 	}
 	
 	[ImageEffectOpaque]
-	void OnRenderImage (RenderTexture source, RenderTexture destination)
-	{
+	void OnRenderImage (RenderTexture source, RenderTexture destination) {
 		if (!m_Supported || !m_SSAOShader.isSupported) {
 			enabled = false;
 			return;
@@ -106,16 +95,17 @@ public class SSAOEffect : MonoBehaviour
 		float far = camera.farClipPlane;
 		float y = Mathf.Tan (fovY * Mathf.Deg2Rad * 0.5f) * far;
 		float x = y * camera.aspect;
-		m_SSAOMaterial.SetVector ("_FarCorner", new Vector3(x,y,far));
+		m_SSAOMaterial.SetVector ("_FarCorner", new Vector3 (x, y, far));
 		int noiseWidth, noiseHeight;
 		if (m_RandomTexture) {
 			noiseWidth = m_RandomTexture.width;
 			noiseHeight = m_RandomTexture.height;
 		} else {
-			noiseWidth = 1; noiseHeight = 1;
+			noiseWidth = 1;
+			noiseHeight = 1;
 		}
 		m_SSAOMaterial.SetVector ("_NoiseScale", new Vector3 ((float)rtAO.width / noiseWidth, (float)rtAO.height / noiseHeight, 0.0f));
-		m_SSAOMaterial.SetVector ("_Params", new Vector4(
+		m_SSAOMaterial.SetVector ("_Params", new Vector4 (
 			m_Radius,
 			m_MinZ,
 			1.0f / m_OcclusionAttenuation,
@@ -124,12 +114,11 @@ public class SSAOEffect : MonoBehaviour
 		bool doBlur = m_Blur > 0;
 		Graphics.Blit (doBlur ? null : source, rtAO, m_SSAOMaterial, (int)m_SampleCount);
 
-		if (doBlur)
-		{
+		if (doBlur) {
 			// Blur SSAO horizontally
 			RenderTexture rtBlurX = RenderTexture.GetTemporary (source.width, source.height, 0);
 			m_SSAOMaterial.SetVector ("_TexelOffsetScale",
-				new Vector4 ((float)m_Blur / source.width, 0,0,0));
+				new Vector4 ((float)m_Blur / source.width, 0, 0, 0));
 			m_SSAOMaterial.SetTexture ("_SSAO", rtAO);
 			Graphics.Blit (null, rtBlurX, m_SSAOMaterial, 3);
 			RenderTexture.ReleaseTemporary (rtAO); // original rtAO not needed anymore
@@ -137,7 +126,7 @@ public class SSAOEffect : MonoBehaviour
 			// Blur SSAO vertically
 			RenderTexture rtBlurY = RenderTexture.GetTemporary (source.width, source.height, 0);
 			m_SSAOMaterial.SetVector ("_TexelOffsetScale",
-				new Vector4 (0, (float)m_Blur/source.height, 0,0));
+				new Vector4 (0, (float)m_Blur / source.height, 0, 0));
 			m_SSAOMaterial.SetTexture ("_SSAO", rtBlurX);
 			Graphics.Blit (source, rtBlurY, m_SSAOMaterial, 3);
 			RenderTexture.ReleaseTemporary (rtBlurX); // blurX RT not needed anymore
