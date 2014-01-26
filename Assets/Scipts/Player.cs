@@ -14,6 +14,8 @@ public class Player : MonoBehaviour {
 	private PlayerAnimation anim;
 
 	private bool isJumping = false;
+
+	private bool isActive = true;
 		
 	// Use this for initialization
 	void Start () {
@@ -21,7 +23,12 @@ public class Player : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () { 
+	void Update () {
+		if (isActive)
+			DoUpdate ();
+	}
+
+	void DoUpdate () {
 		if (isJumping) {
 			if (fc.JumpOver ()) {
 				isJumping = false;
@@ -35,10 +42,8 @@ public class Player : MonoBehaviour {
 				anim.SetState (0);
 			}
 		}
-
 		float dir = Input.GetAxis ("Mouse X");
 		transform.Rotate (0f, dir * 5f, 0f);
-
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			if (fc.IsOnGround ()) {
 				fc.StartJumping ();
@@ -47,6 +52,13 @@ public class Player : MonoBehaviour {
 				rigidbody.AddForce ((Vector3.up + transform.forward) * 300f);
 			}
 		}
+	}
 
+	/// <summary>
+	/// Deactivates the controlls, and set to idle state.
+	/// </summary>
+	public void DeactivateControlls () {
+		isActive = false;
+		anim.SetState (0);
 	}
 }

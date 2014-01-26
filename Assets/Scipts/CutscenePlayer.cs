@@ -20,7 +20,10 @@ public class CutscenePlayer : MonoBehaviour {
 	/// </summary>
 	public Transform rotateObject;
 
-	public Camera camera;
+	/// <summary>
+	/// The camera. Will be detached from the cutscene upon cutscene end.
+	/// </summary>
+	public Camera cam;
 	
 	/// <summary>
 	/// Indicates if the cutscene is in controll. If false, a waypoint should have controll.
@@ -44,13 +47,12 @@ public class CutscenePlayer : MonoBehaviour {
 				if (anim != null) {
 					anim.Play ();
 				}
-				camera.transform.parent = head;
+				cam.transform.parent = head;
 				head.parent = null;
 				head.rigidbody.isKinematic = false;
 			} else {
 				// Move towards target position
 				Vector3 targetVector = waypoints [nextWaypointIndex].transform.position;
-				//Vector3 targetAdjHeight = new Vector3 (targetVector.x, transform.position.y, targetVector.z);
 				transform.position = Vector3.MoveTowards (transform.position, targetVector, speed * Time.deltaTime);
 
 				Vector3 targetLookDirection = waypoints [nextWaypointIndex].transform.forward;

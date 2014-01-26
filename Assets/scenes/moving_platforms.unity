@@ -5834,6 +5834,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winText: {fileID: 0}
   nextLevel: totalHell
+  player: {fileID: 839020456}
   ignoreObject: {fileID: 0}
 --- !u!135 &2025079540
 SphereCollider:

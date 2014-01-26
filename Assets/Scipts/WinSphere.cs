@@ -11,13 +11,15 @@ public class WinSphere : MonoBehaviour {
 	private bool hasWon = false;
 	private float winTime;
 
+	public Player player;
+
 	public GameObject ignoreObject;
 
 	void Update () {
 		if (hasWon) {
-			//if (Time.time - winTime > 5f) {
-			Application.LoadLevel (nextLevel);
-			//}
+			if (Time.time - winTime > 2f) {
+				Application.LoadLevel (nextLevel);
+			}
 		}
 	}
 
@@ -29,6 +31,7 @@ public class WinSphere : MonoBehaviour {
 			}
 			hasWon = true;
 			winTime = Time.time;
+			player.DeactivateControlls ();
 		}
 	}
 }
