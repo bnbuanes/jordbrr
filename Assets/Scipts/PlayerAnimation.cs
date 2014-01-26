@@ -69,7 +69,6 @@ public class PlayerAnimation : MonoBehaviour {
 
 	void RunStateUpdate () {
 		float animTime = anim ["Run"].time;
-		Debug.Log (animTime - timeOfLast);
 		if (animTime - timeOfLast > 0.33f) {
 			footStep.Play ();
 			timeOfLast = animTime;
