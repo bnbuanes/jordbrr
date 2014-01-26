@@ -1059,7 +1059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winText: {fileID: 0}
-  nextLevel: test
+  nextLevel: endscreen
   player: {fileID: 754129060}
   ignoreObject: {fileID: 0}
 --- !u!135 &449949967
