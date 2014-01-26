@@ -36,7 +36,6 @@ public class Player : MonoBehaviour {
 		} else {
 			if (Input.GetKey (KeyCode.W)) {
 				anim.SetState (1);
-				//rigidbody.AddRelativeForce (Vector3.forward * Time.deltaTime * speed);
 				transform.Translate (Vector3.forward * Time.deltaTime * speed);
 			} else {
 				anim.SetState (0);
