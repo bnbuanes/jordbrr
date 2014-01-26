@@ -47,4 +47,9 @@ public class HellFireCamera : MonoBehaviour {
 			hasCameraRotated = true;
 		}
 	}
+
+	public void Reset () {
+		hasMoved = false;
+		hasCameraRotated = false;
+	}
 }
