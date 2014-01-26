@@ -4,7 +4,11 @@ using System.Collections;
 public class StartGameOnCollision : MonoBehaviour {
 
 	public Player player;
-	public Transform body;
+
+	/// <summary>
+	/// These objects are hidden on play
+	/// </summary>
+	public GameObject[] removeOnPlay;
 	private bool hasBeenCollidedWith = false;
 	private AudioSource playOnCollide;
 
@@ -22,7 +26,9 @@ public class StartGameOnCollision : MonoBehaviour {
 			if (playOnCollide != null)
 				playOnCollide.Play ();
 
-			body.gameObject.SetActive (false);
+			foreach (GameObject g in removeOnPlay) {
+				g.SetActive (false);
+			}
 			player.gameObject.SetActive (true);
 			hasBeenCollidedWith = true;
 		}
